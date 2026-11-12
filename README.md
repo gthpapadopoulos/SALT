@@ -12,13 +12,31 @@
 Official PyTorch implementation of **SALT**, accepted at the **Third Workshop
 on Computer Vision for Geospatial Image Analysis (GeoCV), WACV 2027**.
 
-SALT learns transferable structural evidence from a labeled source dataset
-and localizes it in unseen target images using only the current image.
-The release includes training, evaluation, and visualization for
-LEVIR-CD to WHU and WHU to LEVIR-CD, with configurations and trained heads
-for seeds 111, 222, and 333.
-
 ## Overview
+
+Change detection in remote sensing conventionally relies on spatially aligned
+bi-temporal imagery, which may be unavailable or unreliable in practical
+scenarios. Recent single-temporal approaches address this limitation by
+learning structural evidence, such as building regions, from a labeled source
+dataset and transferring it to unseen target imagery using only the current
+image. However, adaptation to the source dataset can over-specialize
+pretrained features and reduce their cross-dataset generalization, a risk that
+this paper argues is higher when the feature adaptation is parameterized
+independently of the states used for prediction. To address this issue, the
+current study introduces SALT, a State-Aligned Low-Rank Transfer framework.
+SALT keeps a DINOv3 backbone frozen and learns negative and positive
+structural states that both score each patch and, through State-Aligned
+Low-Rank Adaptation (SALA), span the rank-2 subspace in which patch features
+are corrected. Directional State Alignment supervises these corrections to
+raise the evidence of positive patches and lower that of negative ones, while
+Geometry Preservation limits changes to the pairwise relations among
+pretrained patch features. Experiments on LEVIR-CD and the WHU aerial
+building dataset show that, at the pixel level and in both transfer
+directions, SALT outperforms four baselines reproduced under a common
+source-only protocol, improving over the strongest reproduced baselines by
+9.45 and 5.79 points in pixel-level AP and by 27.69 and 14.25 points in IoU
+(LEVIR-CD to WHU and WHU to LEVIR-CD, respectively), with only 0.068M
+trainable parameters and 40.2 ms per image.
 
 <p align="center">
   <a href="assets/SALT_overview.pdf">
@@ -26,16 +44,6 @@ for seeds 111, 222, and 333.
          alt="SALT framework: a frozen DINOv3 backbone, state-aligned low-rank adaptation, directional supervision, geometry preservation, and target structural localization.">
   </a>
 </p>
-
-SALT keeps DINOv3 ViT-L/16 frozen and learns two structural states and a
-lightweight coefficient predictor, totaling **67,778 trainable parameters**.
-The same states score each patch and define the rank-2 subspace used by
-**State-Aligned Low-Rank Adaptation (SALA)**. **Directional State Alignment
-(DSA)** supervises the change in structural evidence, while **Geometry
-Preservation** penalizes distortion of the pretrained feature relationships.
-
-Training, checkpoint selection, and threshold calibration use only source
-data. Target inference requires no pre-event reference image or adaptation.
 
 ## Installation
 
