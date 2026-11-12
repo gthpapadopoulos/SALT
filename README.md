@@ -6,12 +6,7 @@
 </p>
 
 <p align="center">
-  <strong>Accepted at WACV 2027 &middot; GeoCV Workshop</strong><br>
-  <a href="https://sites.google.com/view/geocv/home">Workshop</a> |
-  <a href="assets/SALT_overview.pdf">Overview PDF</a> |
-  <a href="#installation">Installation</a> |
-  <a href="#evaluate-released-checkpoints">Evaluation</a> |
-  <a href="#train-one-model">Training</a>
+  <strong>Accepted at WACV 2027 &middot; GeoCV Workshop</strong>
 </p>
 
 Official PyTorch implementation of **SALT**, accepted at the **Third Workshop
@@ -41,20 +36,6 @@ Preservation** penalizes distortion of the pretrained feature relationships.
 
 Training, checkpoint selection, and threshold calibration use only source
 data. Target inference requires no pre-event reference image or adaptation.
-
-## Main Pixel Results
-
-Values are percentages, mean +/- sample standard deviation over seeds 111,
-222, and 333.
-
-| Transfer | P-AUROC | P-AP | F1 | IoU |
-|---|---:|---:|---:|---:|
-| LEVIR-CD -> WHU | 98.08 +/- 0.08 | 87.77 +/- 0.21 | 79.59 +/- 0.31 | 66.10 +/- 0.42 |
-| WHU -> LEVIR-CD | 94.82 +/- 0.18 | 44.42 +/- 0.98 | 46.24 +/- 2.19 | 30.09 +/- 1.84 |
-
-Checkpoint hashes are in `checkpoints/sha256.json`. The released checkpoints
-contain the model weights, configuration, seed, selected epoch, and source
-threshold needed for evaluation.
 
 ## Installation
 
