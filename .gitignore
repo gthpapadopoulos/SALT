@@ -1,0 +1,13 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+third_party/
+data/
+weights/
+runs/
+outputs/
+results/
+*.npy
+*.npz
+*.tmp

@@ -1,0 +1,8 @@
+{
+  "splits/LEVIR/test.jsonl": "49425b3fa677445165d8f52d1776737fff6b7d75562f5fa45fe35bee0081edd1",
+  "splits/LEVIR/train.jsonl": "02d2df2c41d3be4e365af1cda12116c6e605917e53d744a3087f32cd596a17b6",
+  "splits/LEVIR/val.jsonl": "b5fb59bec3d466ad5341ea340960aeb0726c273f69c7107649c45ad33318b2c9",
+  "splits/WHU3/test.jsonl": "f309295a9e1ac0442427d3ec2e6a8fd36ff37fb2e601111dbf4f51c19dda21bd",
+  "splits/WHU3/train.jsonl": "24a39f1b4bafd5431c175235a3190db408e8dd355a97cff74802a24f5aa438e7",
+  "splits/WHU3/val.jsonl": "32e0d704bf00905d46e62ea0dc29c111434b2da0a1f87348aafe2e8f95fa34a2"
+}
