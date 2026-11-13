@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2611.17077v1">arXiv</a>
+  <a href="https://arxiv.org/abs/2611.17077v1"><img src="https://img.shields.io/badge/arXiv-2611.17077-b31b1b.svg" alt="arXiv"></a>
 </p>
 
 Official PyTorch implementation of **SALT**, accepted at the **Third Workshop
