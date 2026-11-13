@@ -9,6 +9,10 @@
   <strong>Accepted at WACV 2027 &middot; GeoCV Workshop</strong>
 </p>
 
+<p align="center">
+  <a href="https://arxiv.org/abs/2611.17077v1">arXiv</a>
+</p>
+
 Official PyTorch implementation of **SALT**, accepted at the **Third Workshop
 on Computer Vision for Geospatial Image Analysis (GeoCV), WACV 2027**.
 
