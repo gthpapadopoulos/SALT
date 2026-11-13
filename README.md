@@ -13,6 +13,16 @@
   <a href="https://arxiv.org/abs/2611.17077v1"><img src="https://img.shields.io/badge/arXiv-2611.17077-b31b1b.svg" alt="arXiv"></a>
 </p>
 
+<p align="center">
+  <strong><a href="mailto:aggelospsiris@hua.gr">Aggelos Psiris</a></strong> &middot;
+  <strong><a href="mailto:gangelidis@hua.gr">Georgios Angelidis</a></strong> &middot;
+  <strong><a href="mailto:gsfikas@uniwa.gr">Giorgos Sfikas</a></strong> &middot;
+  <strong><a href="mailto:maria.vakalopoulou@centralesupelec.fr">Maria Vakalopoulou</a></strong><br>
+  <strong><a href="mailto:tlagkas@cs.duth.gr">Thomas Lagkas</a></strong> &middot;
+  <strong><a href="mailto:psarigiannidis@uowm.gr">Panagiotis Sarigiannidis</a></strong> &middot;
+  <strong><a href="mailto:G.Th.Papadopoulos@hua.gr">Georgios Th. Papadopoulos</a></strong>
+</p>
+
 Official PyTorch implementation of **SALT**, accepted at the **Third Workshop
 on Computer Vision for Geospatial Image Analysis (GeoCV), WACV 2027**.
 
